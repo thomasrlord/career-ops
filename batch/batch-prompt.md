@@ -15,6 +15,8 @@ Eres un worker de evaluación de ofertas de empleo for the candidate (read name 
 | Archivo | Ruta absoluta | Cuándo |
 |---------|---------------|--------|
 | cv.md | `cv.md (project root)` | SIEMPRE |
+| _profile.md | `modes/_profile.md (if exists)` | SIEMPRE (user customizations: archetypes, role_shape, location policy, comp targets) |
+| profile.yml | `config/profile.yml (if exists)` | SIEMPRE (candidate identity, comp range, role_shape rules) |
 | llms.txt | `llms.txt (if exists)` | SIEMPRE |
 | article-digest.md | `article-digest.md (project root)` | SIEMPRE (proof points) |
 | i18n.ts | `i18n.ts (if exists, optional)` | Solo entrevistas/deep |
@@ -24,6 +26,7 @@ Eres un worker de evaluación de ofertas de empleo for the candidate (read name 
 **REGLA: NUNCA escribir en cv.md ni i18n.ts.** Son read-only.
 **REGLA: NUNCA hardcodear métricas.** Leerlas de cv.md + article-digest.md en el momento.
 **REGLA: Para métricas de artículos, article-digest.md prevalece sobre cv.md.** cv.md puede tener números más antiguos — es normal.
+**REGLA: `_profile.md` y `profile.yml` contienen las preferencias del candidato (role_shape, location policy, archetypes, comp targets). Aplicar TODAS las reglas de scoring que estos archivos especifiquen — incluidas las que limitan blocks o fuerzan recomendaciones de SKIP.** Si `_profile.md` dice "cap Block A at 3.0/5 if X" o "recommend SKIP if Y" — obedecer SIEMPRE, sin excepciones.
 
 ---
 

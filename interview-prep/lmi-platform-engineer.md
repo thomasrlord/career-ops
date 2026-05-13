@@ -190,27 +190,45 @@ Full stories are in `interview-prep/story-bank.md` if you want to refresh memory
 
 ## Your Questions for George
 
-Have 3-4 ready. HM screens always end with "any questions for me?" — and the quality of your questions tells him a lot.
+**Ask 3-4. Don't drown him.** Lead with #1, hold #2 for the end, use the middle two as conversational pickups when natural — don't read them like a script.
 
-**Best ones for a hiring manager:**
+### 1. The IronGate ask — LEAD WITH THIS
 
-1. **"I noticed three products mentioned — IronSled, LIGER, and IronGate. I'm familiar with IronSled and LIGER from public information, but I haven't been able to find anything on IronGate. Can you tell me what it is and how the three fit together as a portfolio?"**
-   - Honest about your knowledge limits, signals you did homework on the other two
-2. **"What does the IronSled team look like today — team size, how engineers split between platform work and customer deployments?"**
-   - Reveals role shape; lets you check that this is engineer-on-team, not lead/solo-owner
-3. **"What's the biggest engineering challenge IronSled is working on right now? Where would my work hit the ground in the first 90 days?"**
-   - Shows you're thinking about contribution, not just collecting a title
-4. **"How does the team work with the LIGER side? Is there shared platform infrastructure, or are they distinct stacks?"**
-   - Demonstrates portfolio thinking; opens up the AI-adjacency conversation
-5. **"From your perspective as the hiring manager, what would make someone a great fit on this team versus just a competent one?"**
-   - Lets George tell you exactly what success looks like — and signals you're evaluating fit, not just selling yourself
+> "I noticed three products mentioned — IronSled, LIGER, and IronGate. I'm familiar with IronSled and LIGER from public information, but I haven't been able to find anything on IronGate. Can you tell me what it is and how the three fit together?"
 
-**Optional if conversation goes deep on tech:**
+**Why it works:** Honest about what you don't know. Signals you did homework on the other two. Opens the portfolio conversation. Best opener.
 
-6. **"GitLab CI is in the JD — is the migration from other CI/CD systems still in progress, or is everything already on GitLab?"**
-   - Lets him talk about the actual stack maturity; calibrates the GitLab CI ramp expectation
+### 2. The success-criteria question — ASK NEAR THE END
 
-**Avoid:** comp-trajectory questions (save for offer stage), "what's the company culture like" (vague), anything that sounds like you're testing him, asking about benefits or PTO.
+> "From your perspective as the hiring manager, what would make someone a great fit on this team versus just competent?"
+
+**Why it works:** Lets George tell you exactly what success looks like. His answer is a free coaching session for any future rounds. Signals you're evaluating fit, not just selling yourself.
+
+### 3. The first-90-days question
+
+> "What's the biggest engineering challenge IronSled is working on right now? Where would my work hit the ground in the first 90 days?"
+
+**Why it works:** Shows contribution mindset, not title-collection. His answer also tells you whether the role is real (specific challenges) or vague (warning sign).
+
+### 4. The team-shape question
+
+> "What does the IronSled team look like today — team size, how engineers split between platform work and customer deployments?"
+
+**Why it works:** Confirms this is engineer-on-team (your compass), not solo-owner. Calibrates whether you'd be supporting a team or building something alone.
+
+### Optional 5th — only if conversation goes deep on tech
+
+> "GitLab CI is in the JD — is the migration from other CI/CD systems still in progress, or is everything already on GitLab?"
+
+**Why it works:** Lets him talk about the actual stack maturity; calibrates your GitLab CI ramp expectation. Skip if you've already covered tech ground naturally.
+
+### What NOT to ask
+
+- ❌ Salary, bonus, equity, comp trajectory — save for offer stage
+- ❌ Benefits / PTO / WFH details — HR territory
+- ❌ "What's the company culture like?" — vague, signals you didn't think
+- ❌ "Do you offer training budgets?" — sounds like you're auditing him
+- ❌ Anything you could have Googled (basic LMI history, the obvious JD bullets)
 
 ---
 

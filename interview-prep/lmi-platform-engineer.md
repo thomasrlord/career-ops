@@ -1,9 +1,23 @@
 # LMI — Platform Engineer Interview Prep
 
 **When:** Wed 2026-05-13, 3:30 PM EST (2:30 PM CT)
-**Format:** Microsoft Teams
-**With:** TBD — confirmation email pending from Anna Keyes (TA/HR)
+**Format:** Microsoft Teams — **camera on for the full duration**
+**With:** TBD — confirmation came through without naming the interviewer
 **Role link:** [#363 report](../reports/363-lmi-platform-engineer-ironsled-2026-05-12.md) · Score 4.1/5
+
+---
+
+## ⚠ LMI's Interview Policy (READ THIS)
+
+From the confirmation email:
+
+> "We ask that you remain on camera for the duration of the interview and refrain from using AI tools or interview guides. We're most interested in hearing your authentic thoughts and experiences in your own words. While AI should not be used to answer questions in real time, you're welcome to share examples of how you use AI to make your work more effective."
+
+**What this means for you:**
+- **Internalize this prep doc tonight.** Do not have it open or visible during the call.
+- **No second monitor, no notes, no AI assistants running.** They will be reading body language and eye movement.
+- **Camera on the entire time.**
+- **They DO want to hear about how you use AI in your work** — see the "AI in your work" section below. Have a real example ready.
 
 ---
 
@@ -99,6 +113,30 @@ If she lobs technical questions (she might pre-screen on these), here's the hone
 
 ---
 
+## AI in Your Work (They Invited This — Use It)
+
+LMI explicitly said they want to hear how you use AI to make your work more effective. This is your opportunity to differentiate. Most candidates won't have a thoughtful answer — you can.
+
+**Don't say:** "I use ChatGPT sometimes" (weak, generic)
+
+**Do say something like:**
+
+> "AI tools are a thinking partner for me — most useful for accelerating the ramp on something new and for pressure-testing my own reasoning before I commit code. When I picked up Terraform after years of CloudFormation, I used Claude as a sparring partner to test my mental model against the state-management differences — that cut my time to productive output significantly. I also use it for code review — having an extra set of eyes on a script before it goes anywhere near production is cheap insurance."
+
+**Then bridge to where AI fits in DevSecOps specifically:**
+
+> "On the DevSecOps side, I'm watching the AIOps direction closely — automating remediation for known failure modes so on-call attention is reserved for novel problems. I've built that pattern manually with CloudWatch, Lambda, and SSM. The next step is using ML to sharpen the detection signal so the automation triggers on the right things. The discipline has to come first though — the value isn't AI deciding what to do, it's the detection → action → observation loop being safe and observable end-to-end."
+
+**Why this works:**
+- Specific and credible (not hand-wavy)
+- Shows you use AI thoughtfully, not as a crutch
+- Bridges to a real production pattern you've built (the AIOps STAR story)
+- Signals you understand where AI in DevSecOps is going
+
+**Keep your honest framing:** You haven't built ML-driven AIOps in production. Don't claim you have. The pitch is that you've built the *foundation* (automated remediation) and you understand the trajectory.
+
+---
+
 ## Story Bank — Quick Pick
 
 | If they ask about... | Lead with... |
@@ -131,18 +169,20 @@ Avoid: comp-trajectory questions (save for HM/offer stage), product-internal que
 ## Pre-Call Checklist (15 min before)
 
 - [ ] Teams app open and logged in
-- [ ] Camera working, lighting OK
-- [ ] CV pulled up in another window
-- [ ] This prep doc visible (second monitor or printed)
+- [ ] **Camera on. Stays on the full call.**
+- [ ] **This prep doc CLOSED. No notes visible. No AI assistants running.** (They'll notice eye drift to a second screen.)
 - [ ] Water nearby
-- [ ] Phone on silent
+- [ ] Phone on silent and face down
 - [ ] Bathroom break before the call starts
+- [ ] Anything visible behind you on camera is clean and uncluttered
+- [ ] Test mic and audio in Teams 5 minutes early
 
-If you have time tonight or tomorrow morning:
+**Earlier today (before the 15-min checklist):**
 
+- [ ] Read this whole prep doc once carefully — internalize, don't memorize verbatim
 - [ ] Skim `lmi.org/who-we-are` and `lmi.org/what-we-do` — 5 min
 - [ ] Quick news scan: "LMI federal contractor 2026" — anything recent worth mentioning
-- [ ] Glance at LMI on LinkedIn — see if Anna's profile gives a read on her background
+- [ ] Glance at Anna Keyes on LinkedIn for background context
 
 ---
 

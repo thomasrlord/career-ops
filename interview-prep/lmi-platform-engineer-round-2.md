@@ -1,15 +1,61 @@
 # LMI — Platform Engineer Interview Prep · Round 2
 
 **When:** Mon 2026-05-18 at 10:30 AM CST (11:30 AM EST)
-**Format:** Microsoft Teams — likely technical (R1 was the HM fit-screen, so R2 is probably a senior engineer, tech lead, or panel) — to be confirmed
-**With:** TBD — interviewer name not yet provided
+**Format:** Microsoft Teams — **panel (2 interviewers)**
+**With:** **Timothy Amico** (Cloud Principal Technical Architect) + **Aakash Patel** (Platform Engineer, IronSled team)
 **R1 outcome:** Cleared — see [main prep doc](./lmi-platform-engineer.md) for full background, comp anchor, story bank, what-not-to-do
 **Score on file:** [#363 report](../reports/363-lmi-platform-engineer-ironsled-2026-05-12.md) · 4.1/5
 
-**Time to R2:** Today is Thursday 2026-05-14. R2 is Monday 2026-05-18 — that's **1 prep day (Friday) + a weekend** before the call. Plan accordingly:
-- **Friday 5/15:** Focused study on ETL + CMMC + GitLab CI mental model (the three you flagged as gaps)
-- **Weekend:** Light review + story-bank refresh; don't burn out
+**Time to R2:** Today is Thursday 2026-05-14. R2 is Monday 2026-05-18 — **1 prep day (Friday) + a weekend** before the call.
+- **Friday 5/15:** Focused study on ETL + CMMC + GitLab CI + **networking refresh** (Timothy's specialty — see new section below)
+- **Weekend:** Light review + story-bank refresh
 - **Monday morning:** Re-read this doc once, refresh the three core stories, light pre-call routine
+
+---
+
+## ⚠ Read This First — Panel Composition
+
+This is a **balanced technical panel**: senior architect + peer engineer. Each interviewer has a different evaluation lens. Address both. Don't favor one.
+
+### Timothy Amico — Cloud Principal Technical Architect
+- Senior. Designs IL2/4/5 cloud environments meeting FedRAMP and NIST requirements
+- Works with **both AWS and Azure** at LMI
+- Holds **AWS Certified Advanced Networking — Specialty**
+- Career path: Senior Infrastructure Engineer → Cloud Principal Technical Architect
+
+**What he'll probe:**
+- Cloud architecture depth (multi-account, networking, IAM, security boundaries)
+- Networking — his specialty cert, expect a real question here
+- IL/FedRAMP/NIST architecture — your wheelhouse, be sharp
+- Multi-cloud — Azure question is likely. Have honest framing ready (you're AWS-only)
+- How you reason about trade-offs at architecture level
+
+**Bridge to him:** "Your background in IL2/4/5 design is exactly the work I've been operating against on Cloud One — STIG hardening, RMF documentation, FedRAMP-equivalent boundary management."
+
+### Aakash Patel — Platform Engineer, IronSled team
+- Peer-level. Recent Rutgers Computer Engineering grad (March 2026)
+- NYC-based
+- **Was actively recruiting for this same role** — he's hiring his own teammate
+- Likely an Aakash-as-future-collaborator screen, not Aakash-as-deep-evaluator
+
+**What he'll probe:**
+- Day-to-day work compatibility — what's it like to pair with you?
+- Hands-on technical fluency (vs architecture)
+- Team-fit, communication style, how you handle being unblocked / blocked
+- Practical IronSled-flavored work scenarios
+
+**Bridge to him:** Match his energy. He's a working engineer, not a senior architect. Be conversational, share concrete experience, ask about how the team actually operates day-to-day.
+
+### Panel dynamics — tactical
+
+- **Eye contact:** Look at whoever asked the question while answering. Glance to the other person briefly mid-answer to include them. Don't stare at one for the whole answer.
+- **Name them when natural:** "Tim, to your earlier point about networking..." or "Aakash, you mentioned the IronSled pipeline — does that mean..."
+- **Don't favor the senior one** — this is a common candidate mistake. Aakash gets equal time and attention.
+- **If they trade off questions clearly:** they've coordinated. Each has a lane. Honor that — give substantive answers to both lanes.
+- **If one dominates:** that's a signal too. Don't try to redirect; let the dynamics play out.
+- **Final question slot:** ask one question for each of them, not just one for the room. "Tim, I'd love your read on... Aakash, from your perspective..." Show you see them as two distinct contributors.
+
+---
 
 ---
 
@@ -129,6 +175,49 @@ You have this. Just be sharp on framing. The JD calls out: "debug, optimize code
 
 ---
 
+### Networking (NEW — Timothy's specialty cert is AWS Advanced Networking)
+
+This is your **documented weak area** per memory. Timothy will probe it. Get the honest framing rock-solid before Monday.
+
+**The 80/20 you need to be conversant on:**
+
+| Concept | What to know |
+|---|---|
+| **VPC** | Virtual Private Cloud — isolated network in AWS. CIDR block (e.g., `10.0.0.0/16`). One VPC per account is common; multi-VPC is for separation. |
+| **Subnets** | Slice of VPC. Public (route to IGW) vs private (no IGW). Across multiple AZs for HA. |
+| **Internet Gateway / NAT Gateway** | IGW = public ingress/egress. NAT GW = private subnets reaching the internet outbound only (no inbound). |
+| **Security Groups vs NACLs** | SG = stateful, instance-level, allow-only rules. NACL = stateless, subnet-level, allow + deny rules. SGs are the primary tool; NACLs are fallback. |
+| **Route Tables** | Per-subnet (or default). Determines where traffic goes — VPC-local, IGW, NAT, VPN, peering, transit gateway. |
+| **VPC Peering** | Direct routing between two VPCs. Doesn't transit (no chains). Cross-account/cross-region supported. |
+| **Transit Gateway** | Hub for many VPCs and on-prem. Replaces complex peering meshes. Common in federal multi-account architectures. |
+| **VPN / Direct Connect** | VPN = encrypted tunnel over internet. Direct Connect = dedicated line. Both terminate at Virtual Private Gateway or Transit Gateway. |
+| **PrivateLink / VPC Endpoints** | Private access to AWS services or third-party services without traversing the internet. Critical in IL4+/GovCloud where egress is restricted. |
+| **DNS — Route53 + Route53 Resolver** | DNS service. Resolver handles VPC ↔ on-prem DNS resolution. Important for hybrid setups. |
+
+**What to say if Timothy probes deep:**
+
+> "Networking is honestly the area I've operated within rather than designed end-to-end. On Cloud One I've worked inside well-bounded VPC environments — security groups, private subnets, VPC endpoints for AWS service access without internet egress. I can reason about routing, security groups vs NACLs, and the basic ingress/egress patterns. Where I'd lean on someone with deeper expertise like yourself is on transit gateway architecture, multi-region failover design, and complex DNS. That's an area I'd want to grow into."
+
+**Why this works:**
+- States the gap honestly without apologizing
+- Names what you DO know (VPCs, SGs, endpoints, classified-egress patterns — all real)
+- Compliments his expertise without being sycophantic ("someone with deeper expertise like yourself" — said once, naturally)
+- Frames it as growth area, not blocker
+
+**Don't bluff:** if asked about a specific advanced topic (BGP routing, AWS Network Firewall, Gateway Load Balancer, transit gateway route propagation), say "I haven't worked with that one in production — what's the IronSled use case?" Honest deflection > making things up. Timothy will see through bluffing immediately.
+
+---
+
+### Multi-cloud / Azure (NEW — Timothy works AWS + Azure at LMI)
+
+Thomas is AWS-only. Azure question is likely. Honest framing:
+
+> "AWS is my production background — 9 years total, 5 specifically in GovCloud. I haven't worked with Azure in production. The concepts transfer (VNet ≈ VPC, NSG ≈ Security Group, Azure AD ≈ IAM with different model), and I'm a fast learner — but I'd be honest day one that Azure is a ramp area, not a strength."
+
+**Don't claim:** Azure cert progress, Azure conceptual depth beyond mapping. Timothy will know.
+
+---
+
 ### K8s Vocabulary (JD says "familiarity")
 
 You've already got the honest framing in the R1 doc. Refresh the vocab so you don't go blank in conversation:
@@ -223,31 +312,47 @@ The JD lists "knowledge of the Army software development process" as Desired. If
 
 ---
 
-## Likely R2 Questions (Inferred from Pattern + Role)
+## Likely R2 Questions (Inferred from Pattern + Role + Panel Composition)
 
-### Technical / Scenario
+### From Timothy (Architect lens)
 
 - "Walk me through how you'd architect a CI/CD pipeline for an application going through ATO."
+- "Describe the network topology of an environment you've worked in — VPC layout, security boundaries, service-to-service traffic."
 - "How would you handle secrets management in a regulated environment?"
-- "Describe a time you had to redesign something for compliance reasons."
 - "How do you think about observability in a system where you can't ship logs to the public internet?"
-- "What's your approach to incident response when production is in a classified environment?"
-- "How would you approach onboarding a new application onto IronSled?"
-- "What happens in your pipeline when a scan fails on a release candidate?"
+- "How does FedRAMP Moderate differ from DISA IL4 in practice?"
+- "If you were architecting IronSled from scratch today, what would you prioritize?"
+- "What's your experience with multi-account / multi-VPC AWS architectures?"
+- **"What's your Azure experience?"** → honest framing
+- **"How comfortable are you with networking deep-dive — transit gateways, VPC endpoints, hybrid DNS?"** → honest framing
 
-### Cultural / Mindset
+### From Aakash (Peer / day-to-day lens)
+
+- "What's your day-to-day workflow look like? IDE, terminal, AI assistants, anything you wouldn't give up?"
+- "Walk me through a recent script or pipeline you wrote — what did it do, what was hard about it?"
+- "Tell me about a time you had to pick up a new technology fast in a real project."
+- "How do you handle being blocked? What's your default move?"
+- "What's your code review philosophy — what do you look for, what do you push back on?"
+- "How would you approach onboarding a new application onto IronSled?"
+- "What's something you've automated recently that saved your team time?"
+- "What's your relationship with on-call been like?"
+
+### Cultural / Mindset (either could ask)
 
 - "What does 'platform engineering' mean to you?"
 - "How do you balance velocity vs safety in a regulated environment?"
 - "Tell me about a disagreement with a security or compliance person — how did you handle it?"
 - "What's the difference between operating someone else's product vs building one?" (← honest answer: you're moving from the first to the second; speak to the bridge, not the gap)
+- "Why LMI specifically — why not stay at a big prime?"
 
-### Probing for Gaps
+### Probing for Gaps (either may ask)
 
-- "How comfortable are you with Kubernetes in production?" → use your honest framing
-- "Have you done much GitLab CI?" → use your bridge framing
-- "What's your experience with ETL workloads?" → use your "infrastructure side, not pipeline side" framing
+- "How comfortable are you with Kubernetes in production?" → honest framing
+- "Have you done much GitLab CI?" → bridge framing from Jenkins
+- "What's your experience with ETL workloads?" → "infrastructure side, not pipeline side" framing
 - "Do you have hands-on experience with CMMC assessments?" → "Worked inside CMMC-required environments; the assessment itself was the compliance team's lane."
+- **"What's your networking depth?"** → honest framing (see networking section)
+- **"How fluent are you with Azure?"** → honest framing (AWS-only, ramp area)
 
 ---
 
@@ -266,14 +371,26 @@ Same story bank as R1 (`interview-prep/story-bank.md`), but R2 may want more dep
 
 ## Before R2 — Action Items
 
-- [ ] Read this entire doc once carefully tonight or tomorrow morning
+**Friday 5/15 (your real prep day):**
+- [ ] Read this entire doc once carefully
+- [ ] **Networking refresh** — go through the networking table above; make sure you can speak fluently about VPCs/SGs/NACLs/endpoints/peering vs transit
+- [ ] **ETL primer** — read through the ETL section; have one example of "data movement infra you've built" ready
+- [ ] **CMMC primer** — memorize the L1/L2/L3 distinction and the relationships table
+- [ ] **GitLab CI** — skim a sample `.gitlab-ci.yml` (any open-source repo); be able to follow what a stage/job does
 - [ ] Refresh the three story-bank stories (Wickr, Auto-Scaling, EFS)
-- [ ] Skim Platform One's Iron Bank docs (10 min — `https://p1.dso.mil/products/iron-bank`)
-- [ ] Skim a sample `.gitlab-ci.yml` (10 min — pick any open-source repo with one)
-- [ ] Glance at Apache NiFi's project page (5 min — context for IronGate / DoD data movement)
-- [ ] When R2 interviewer is named: look them up on LinkedIn, calibrate technical depth, update prep accordingly
-- [ ] When R2 is scheduled: confirm format, duration, and whether it's a panel
-- [ ] **Don't over-prep.** R2 is a conversation, not an exam. The goal is to sound like someone who's done this work and is honest about gaps — not to perform encyclopedic recall.
+
+**Weekend (light):**
+- [ ] Skim Platform One's Iron Bank product page (10 min — `https://p1.dso.mil/products/iron-bank`)
+- [ ] Glance at Apache NiFi's project page (5 min — context for IronGate)
+- [ ] Look up Timothy Amico and Aakash Patel on LinkedIn for additional context (10 min total)
+- [ ] Brain rest — don't keep grinding
+
+**Monday morning (T-2 hours):**
+- [ ] Re-read this doc once
+- [ ] Quick mental rehearsal of the 5-cold-answers (clearance / TMAY / why-leaving / comp / AI-in-your-work) plus the **3 honest-framing scripts** (networking gap, Azure gap, K8s gap)
+- [ ] Pre-call routine from main prep doc
+
+**Don't over-prep.** R2 is a conversation, not an exam. The goal is to sound like someone who's done this work and is honest about gaps — not to perform encyclopedic recall.
 
 ---
 

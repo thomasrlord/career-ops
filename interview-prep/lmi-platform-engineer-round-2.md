@@ -1,10 +1,15 @@
 # LMI — Platform Engineer Interview Prep · Round 2
 
-**When:** TBD — Anna or George will schedule
-**Format:** TBD — likely technical (R1 was the HM fit-screen, so R2 is probably a senior engineer, tech lead, or panel)
-**With:** TBD
+**When:** Mon 2026-05-18 at 10:30 AM CST (11:30 AM EST)
+**Format:** Microsoft Teams — likely technical (R1 was the HM fit-screen, so R2 is probably a senior engineer, tech lead, or panel) — to be confirmed
+**With:** TBD — interviewer name not yet provided
 **R1 outcome:** Cleared — see [main prep doc](./lmi-platform-engineer.md) for full background, comp anchor, story bank, what-not-to-do
 **Score on file:** [#363 report](../reports/363-lmi-platform-engineer-ironsled-2026-05-12.md) · 4.1/5
+
+**Time to R2:** Today is Thursday 2026-05-14. R2 is Monday 2026-05-18 — that's **1 prep day (Friday) + a weekend** before the call. Plan accordingly:
+- **Friday 5/15:** Focused study on ETL + CMMC + GitLab CI mental model (the three you flagged as gaps)
+- **Weekend:** Light review + story-bank refresh; don't burn out
+- **Monday morning:** Re-read this doc once, refresh the three core stories, light pre-call routine
 
 ---
 

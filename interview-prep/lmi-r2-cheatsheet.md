@@ -30,6 +30,12 @@ The panel will probe gaps. These five scripts are your safety net. Read them out
 
 > "My data-engineering work has been more on the supporting infrastructure side than building data pipelines themselves — I've built the AWS infra ETL workloads run on, handled IAM and networking for cross-account flows, operated Lambda/Step Functions for lightweight automation. I haven't owned end-to-end ETL pipelines in production — that's an honest ramp area. The IronGate use case is interesting because it's not pure ETL — it's a security/compliance crossing problem."
 
+### 6. Timeline / competing offer (likely to surface — BAH offer letter is in writing, deadline 2026-05-22)
+
+> "I'm in late-stage conversation with another federal employer where I have a written offer in hand. I haven't shared specifics out of respect for both processes. I'm continuing with LMI because the IronSled work and team are a better strategic fit for where I want to grow — but the other side does have a near-term decision window. If LMI extends an offer, I'd want the timelines to align so I can make the right decision rather than a rushed one."
+
+**Why this works:** Honest (BAH offer is real), preserves dignity (no company/dollar disclosure), signals you need LMI to move with some pace without manufacturing pressure. **Use this only if asked** — don't volunteer it.
+
 **Universal fallback for anything specific you don't know:**
 > "I haven't worked with that in production — what's the IronSled use case?" (Honest deflection beats bluffing every time.)
 
@@ -190,7 +196,8 @@ If asked about NiFi:
 1. **(Open with)** *Tim and Aakash* — "What does the IronSled team look like today — size, how engineers split between platform work and customer deployments?"
 2. *To Tim* — "From an architecture perspective, what's the biggest engineering challenge IronSled is working on right now?"
 3. *To Aakash* — "What's the day-to-day work like? What's a typical week?"
-4. **(Close with)** *Tim and Aakash* — "From your perspectives, what would make someone a great fit on this team versus just competent?"
+4. *To Aakash (insurance question)* — "From your perspective on the team, how is IronSled positioned over the next few years — active contracts, customer growth, government adoption? Platform products in federal can rise or fall with a few key customers, so I want to be sure I'm joining something with runway." (Use if you have a slot — fair business-awareness question, not paranoid.)
+5. **(Close with)** *Tim and Aakash* — "From your perspectives, what would make someone a great fit on this team versus just competent?"
 
 ---
 

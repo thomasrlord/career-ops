@@ -344,6 +344,23 @@ The JD lists "knowledge of the Army software development process" as Desired. If
 - "Tell me about a disagreement with a security or compliance person — how did you handle it?"
 - "What's the difference between operating someone else's product vs building one?" (← honest answer: you're moving from the first to the second; speak to the bridge, not the gap)
 - "Why LMI specifically — why not stay at a big prime?"
+- **"What's your timeline / are you considering other opportunities?"** (Now likely — see Timeline section below)
+
+### Timeline / Competing Offer — Likely R2 Surface Area (NEW 2026-05-15)
+
+BAH (#140) written offer landed 2026-05-15 with a 5/22 response deadline. The panel — or Anna in the post-R2 wrap — is likely to ask about timing. Have this ready:
+
+> "I'm in late-stage conversation with another federal employer where I have a written offer in hand. I haven't shared specifics out of respect for both processes. I'm continuing with LMI because the IronSled work and team are a better strategic fit for where I want to grow — but the other side does have a near-term decision window. If LMI extends an offer, I'd want the timelines to align so I can make the right decision rather than a rushed one."
+
+**Rules of engagement:**
+- **Use only if asked.** Don't volunteer competing offer.
+- **No company name, no dollar amount, no deadline date.** Preserves dignity for both processes and prevents the dollar number from becoming a target for matching/undercutting.
+- **Frame as substance preference, not money preference.** "Better strategic fit" — true and non-mercenary.
+- **Tone is calm, not pressuring.** This is information sharing, not a leverage play.
+- **If pressed for the deadline:** "I owe them a response next week. I'd want LMI's timing to be within reasonable striking distance of that — but I'm flexible if there's a genuine reason for delay."
+- **If pressed for the company:** "I'd rather not say while both processes are open." That's an acceptable answer.
+
+**If Anna handles this in the post-R2 wrap (most likely):** same script, with the addendum: "If LMI is moving toward an offer, having the comp picture and a target offer date this week would help me make a clean decision."
 
 ### Probing for Gaps (either may ask)
 

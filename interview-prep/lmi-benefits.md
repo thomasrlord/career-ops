@@ -17,7 +17,7 @@
 | **STD** | 60% weekly earnings, $2,500/wk cap, 13 wk max, 1 wk wait | $2,500/wk cap = ~$130K equivalent. At $145K base he'd be slightly under-covered on long STD claims. |
 | **LTD** | 60% base, $12,500/mo cap, 90 day wait | $12,500/mo = $150K/yr ceiling — covers a $145K base fully. |
 | **Maternity** | 12 weeks 100% paid (5 STD + 7 paid leave) | N/A for Thomas. |
-| **Personal leave** | "Flexible," non-accrual, immediately available, manager approval | **Ambiguous.** Sounds discretionary rather than cap-tracked. Worth asking: typical usage? Any expectation of cap? Carryover? |
+| **Personal leave** | "Flexible," non-accrual, immediately available, manager approval | **Unlimited PTO in practice** (confirmed 2026-05-15). The PDF's "flexible / non-accrual" wording = de facto unlimited policy. Still worth asking Aakash at R2 how usage actually works on the IronSled team — unlimited policies vary from genuine (15-25 day usage norm) to performative (5-day norm via cultural pressure). |
 | **Holidays** | 10 federal holidays (no floating mentioned) | Standard; some contractors offer 11-12. |
 | **Adoption/Surrogacy** | $30K lifetime reimbursement | N/A unless relevant. |
 | **Family building** | WINFertility (UHC plans) | N/A unless relevant. |
@@ -59,7 +59,7 @@ These are gaps the PDF doesn't address. Get answers before signing:
 2. **Sign-on bonus.** Not mentioned. Worth asking if there's flexibility, especially if comp comes in below BAH's $145K.
 3. **Salary review cadence.** Annual? Mid-year? Tied to certs?
 4. **Remote work setup.** Stipend? Equipment? Internet reimbursement? (No mention in PDF — federal contractors vary widely.)
-5. **PTO specifics.** "Flexible / non-accrual" is vague. Does it function as unlimited PTO (with cultural cap)? Is there a written guidance? Carryover? Payout on separation? **This is the biggest unknown.**
+5. ~~PTO specifics~~ — **resolved 2026-05-15: unlimited in practice.** Ask Aakash at R2 about typical IronSled team usage (15-25 day norm vs performative-unlimited).
 6. **Holiday floating days.** Standard 10 federal listed — any floating/personal days on top?
 7. **Medical premium share specifics.** "Significant portion" is marketing language. Ask for actual employee monthly contribution numbers for each plan tier (single / +spouse / family).
 

@@ -61,13 +61,13 @@ For someone who plans to stay 3+ years, LMI's structure is friendlier; for a one
 
 | Item | BAH | LMI |
 |---|---|---|
-| Vacation/PTO | **20 days yr 1** (L3 senior tier), grows to 25 at 10+ yrs — accrual-based | "Flexible / non-accrual, immediately available" — **no cap or guidance documented** |
+| Vacation/PTO | **20 days yr 1** (L3 senior tier), grows to 25 at 10+ yrs — accrual-based, hard cap | **Unlimited in practice** (confirmed 2026-05-15). PDF language "flexible / non-accrual" = de facto unlimited PTO policy |
 | Federal holidays | 11 | 10 |
 | Paid parental | 6 weeks | Maternity: 12 weeks 100% paid. No separate paternity/parental line called out |
 | STD | **26 weeks** paid, company-paid premium, day-1 available | 13 weeks max, 60% of earnings ($2,500/wk cap), 1-week waiting |
 | LTD | Not specified in known package | 60% base, $12,500/mo cap, 90-day wait |
 
-**BAH wins clearly on STD** (26 weeks vs 13). **PTO is structurally ambiguous at LMI** — "flexible" can mean generous (de facto unlimited) or restrictive (manager-permission gate every time). **This is the single biggest unknown** before signing LMI.
+**BAH wins clearly on STD** (26 weeks vs 13). **LMI wins clearly on PTO** — unlimited in practice vs BAH's hard 20-day cap. For someone whose compass values flexibility and lifestyle, unlimited PTO is a meaningful quality-of-life advantage. Note the typical unlimited-PTO caveat: actual usage tends to settle 15-25 days/yr by cultural pressure; ask Aakash at R2 how it actually works on the IronSled team.
 
 ---
 
@@ -99,9 +99,8 @@ For someone who plans to stay 3+ years, LMI's structure is friendlier; for a one
 ### LMI side
 1. **EVERYTHING about the offer** — no offer yet. Base, bonus target, sign-on, start date.
 2. **Healthcare premium employee cost** — same unknown as BAH.
-3. **PTO specifics** — what does "flexible / non-accrual" actually mean in practice?
-4. **401(k) 1-year wait waivability** — sometimes negotiable for senior hires.
-5. **Equity / profit-sharing** — confirm LMI's corporate structure (not-for-profit?) to know if there's anything beyond cash + benefits + 401(k).
+3. **401(k) 1-year wait waivability** — sometimes negotiable for senior hires.
+4. **Equity / profit-sharing** — confirm LMI's corporate structure (not-for-profit?) to know if there's anything beyond cash + benefits + 401(k).
 
 ---
 
@@ -161,7 +160,7 @@ Both numbers ignore healthcare premium employer share (unknown) and assume singl
 - **BAH provides healthcare rate sheet** showing strong employer subsidy → narrows total-comp gap
 - **BAH clarifies Path A as a real AI/DevOps project**, not sustainment → restores substance parity
 - **LMI offer lands below $145K** → cash decision becomes clear toward BAH
-- **LMI clarifies PTO as truly flexible / culturally generous** → meaningful quality-of-life win
+- ~~LMI clarifies PTO as truly flexible / culturally generous~~ → **resolved: unlimited in practice, quality-of-life win in LMI's favor**
 - **LMI declines or extends another round past 5/22** → BAH becomes the only live option
 
 ---

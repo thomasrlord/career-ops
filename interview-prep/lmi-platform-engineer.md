@@ -267,13 +267,33 @@ Then update the tracker — status, interviewer name, what they said about next 
 - 2026-05-13: Confirmation email arrived. Two updates: (1) LMI's no-AI-during-interview / camera-on policy; (2) explicit invitation to discuss how you use AI in your work
 - 2026-05-13: Interviewer named — **George, Hiring Manager, Product Development**. Three products in portfolio: **IronSled** (DevSecOps PaaS for IL4/IL6 DoD), **LIGER®** (GenAI platform for government, RAG, IL5, Army DASA-DES contract), **IronGate** (not publicly documented — flagged as a question to ask George). Prep refocused from HR-screen to HM-screen.
 - **2026-05-13 (post-call): R1 CLEARED.** Conversation with George went well. Advancing to R2 with a new interviewer (name/timing TBD). IronGate clarified by George: a way to get data from the commercial world into IL environments (i.e., commercial-to-IL data bridge — sibling to IronSled DevSecOps platform + LIGER GenAI). Role surfaces real learning runway, matching Thomas's compass. No comp discussion. No red flags. **Self-identified prep gaps for R2: ETL + CMMC.** Will update interviewer + format once Anna or George schedules R2.
+- **2026-05-18 (R2 COMPLETED): Aakash solo, no Tim.** ~30 min Teams call. Chill per Thomas's gut, no surprises, no stumbles. Aakash routing notes to HM George + recruiter Anna. **No R3 expected** — process confirmed as R1→R2→decision/offer. Same afternoon: sent disclosure email to Anna (BAH offer in hand, near-term decision timeline, no specifics on company/$/date). Sent version archived at `output/Anna-R2-Disclosure-2026-05-18.md`. Decision/offer expected as next signal from LMI.
 
 ---
 
-## Round 2 Prep (to expand once interviewer + format are known)
+## Round 2 Prep
 
 **Confirmed gaps to brush up on before R2:**
 
 - [ ] **ETL** — Thomas's data-engineering exposure is light. Brush up on patterns: extract → transform → load, batch vs stream, ETL vs ELT, common tools (e.g., Airflow, dbt, Glue, Lambda-based pipelines, AWS Data Pipeline / Step Functions). Tie back to IronGate context: moving data from commercial sources into IL environments is essentially a constrained ETL problem.
 - [ ] **CMMC** — review CMMC 2.0 levels. Level 1 (basic FCI), Level 2 (CUI / NIST 800-171), Level 3 (advanced / NIST 800-172). LMI already holds CMMC 2.0 Level 2 certification (perfect-score per public news). Know enough to discuss how CMMC fits alongside FedRAMP, IL2-6, and DISA SRG. Connects to ATO acceleration story IronSled is selling.
 - [ ] **Once R2 interviewer is known:** look them up on LinkedIn, calibrate technical depth, refresh prep accordingly
+
+---
+
+## Round 2 — Completed (2026-05-18)
+
+**Format:** Mon 2026-05-18, 10:30 AM CDT via Teams. **Scheduled panel was Tim Amico + Aakash Patel — actual interview was Aakash solo.** Tim did not appear; no explanation given. ~30 min call.
+
+**Read:** Chill conversation per Thomas's gut. No surprises, no stumbles. No comp discussion (peer interview, not HM). No specific decision timeline given by Aakash.
+
+**Process shape (confirmed):** R1 (George/HM) → R2 (Aakash/peer) → decision/offer. Tim was nominally on the calendar but isn't part of the actual decision path. Aakash described next step as "submit notes to HM and recruiter."
+
+**Same-day actions:**
+- Sent disclosure email to Anna Keyes (afternoon 2026-05-18). Combined R2 follow-up + BAH offer disclosure: offer in hand, near-term timeline, no company/$/exact-date. Substance-preference framing came out softer than planned ("align well with my interests" rather than explicit "substance not money") — acceptable in email tone, but **watch in any follow-up call** to redirect cleanly if Anna probes comp. Sent version archived at `output/Anna-R2-Disclosure-2026-05-18.md`.
+
+**Watching for:**
+- Anna reply window: 24-48 hours. If silent past Wed afternoon 2026-05-20, send one nudge.
+- BAH deadline: 2026-05-22. LMI has 4 business days from email send to surface a signal.
+- If Anna asks for deadline: use prepared line ("end of the week, but flexible if there's a genuine reason for delay").
+- If Anna asks for company or $: use prepared line ("rather not say while both processes are open").
